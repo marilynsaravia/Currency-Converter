@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h2>Conversor de Divisas</h2>
+    <div class="container">
+        <!--Moneda origen-->
+        <div class="converter">
+            <input type="number" id="amount" placeholder="Cantidad">
+            <select id="fromCurrency"></select>
+        </div>
+        <!--Botón de intercambio de moneda-->
+        <button id="swapBtn" class="swapBtn"></button> 
+        <!--Moneda destino-->
+        <div class="converter">
+            <input type="text" id="result" placeholder="Resultado" readonly>
+            <select id="toCurrency"></select> 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
