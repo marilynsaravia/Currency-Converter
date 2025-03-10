@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <title>Currency Converter</title>
 </head>
 <body>
-    <h2>Conversor de Divisas</h2>
     <div class="container">
-        <!--Moneda origen-->
-        <div class="converter">
-            <input type="number" id="amount" placeholder="Cantidad">
-            <select id="fromCurrency"></select>
+        <img class="logo" src="logo (2).png" alt="">
+        <h2>Global currency conversions & money transfers</h2>
+        <div class="converter__section">
+            <!--Moneda origen-->
+            <div class="converter__section">
+                <input type="number" id="amount" placeholder="Cantidad">
+                <select id="fromCurrency"></select>
+            </div>
+            <!--Botón de intercambio de moneda-->
+            <button id="swapBtn" class="swapBtn">
+                <i class="fas fa-exchange-alt"></i> <!-- Ícono de intercambio -->
+            </button>    
+            <!--Moneda destino-->
+            <div class="converter__section">
+                <input type="text" id="result" placeholder="Resultado" readonly>
+                <select id="toCurrency"></select> 
+            </div>
         </div>
-        <!--Botón de intercambio de moneda-->
-        <button id="swapBtn" class="swapBtn"></button> 
-        <!--Moneda destino-->
-        <div class="converter">
-            <input type="text" id="result" placeholder="Resultado" readonly>
-            <select id="toCurrency"></select> 
-        </div>
+        
+        
     </div>
+    <footer>
+        <small>Desarrollado por <a href="https://www.linkedin.com/in/marilynsaravia/" target="_blank">Marilyn Saravia</a></small>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
